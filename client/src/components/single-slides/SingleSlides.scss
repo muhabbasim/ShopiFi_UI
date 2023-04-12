@@ -1,0 +1,35 @@
+.single-slide {
+  
+  .slider-container {
+
+    img {
+      width: 300px;
+      max-height: 400px;
+      object-fit: contain;
+      background-color: rgb(246, 246, 246);
+
+    }
+  }
+
+  .arrows {
+    position: relative;
+
+    .left_arrow {
+      position: absolute;
+      top: 190px;
+      left: 10px;
+      cursor: pointer;
+    }
+
+    .right_arrow {
+      position: absolute;
+      bottom: 190px;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .slider-container {
+    height: 400px;
+  }
+}

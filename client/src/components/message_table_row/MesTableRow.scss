@@ -1,0 +1,44 @@
+@import '../../style.scss';
+
+
+.mes-table-row {
+  @include mobile {
+    .date {
+      display: none;
+    }
+    .action {
+      display: none;
+    }
+  } 
+
+  td { 
+    padding: 15px 5px;
+    font-size: 15px;
+    img {
+      width: 60px;
+      height: 30px;
+      object-fit: cover;
+    }
+    button {
+      border: none;
+      color: white;
+      background-color: rgb(71, 174, 71);
+      padding: 8px 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+
+  .gray {
+    color: gray;
+  }
+
+  td:nth-child(3) {
+    color: gray;
+  }
+}
+
+.unread {
+  background-color: rgb(235, 250, 245);
+
+}

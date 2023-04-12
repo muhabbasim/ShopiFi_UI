@@ -1,0 +1,54 @@
+.add-review {
+  margin-top: 20px;
+  // border: 1px solid rgb(240, 240, 240);
+  padding: 20px;
+  border-radius: 5px;
+
+  h3 {
+    color: var(--light-blue);
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .stars {
+      gap: 5px;
+
+      span {
+        margin-right: 20px;
+      }
+      
+    }
+
+    input {
+      display: none;
+    }
+
+    textarea {
+      border: 1px solid lightgray;
+      outline: none;
+      padding: 10px;
+    }
+
+  }
+  .button {
+    display: flex;
+    justify-content: end;
+
+    button {
+      background-color: var(--light-blue);
+      border: none;
+      padding: 10px 30px;
+      border-radius: 5px;
+      color: white;
+      margin-top: 10px;
+      cursor: pointer;
+      align-self: flex-end;
+    }
+  }
+
+}

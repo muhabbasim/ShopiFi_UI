@@ -1,0 +1,66 @@
+@import '../../style.scss';
+
+
+.footer {
+  // height: 500px;
+  padding: 30px 10%;
+  background-color: rgb(245, 245, 245);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;       
+    }
+
+    .cat {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+
+      span {
+        color: gray;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .line {
+    height: 1px;
+    background-color: gray;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      gap: 20px;
+
+      h2 {
+        font-size: 15px;
+        margin: 0;
+        margin-right: 20px;
+      }
+
+      span {
+        color: gray;
+
+        @include tablet {
+          display: none;       
+        }
+      }
+    }
+
+    .right {
+      gap: 20px;
+    }
+
+  }
+}

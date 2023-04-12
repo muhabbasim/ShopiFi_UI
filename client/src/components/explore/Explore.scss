@@ -1,0 +1,83 @@
+@import '../../style.scss';
+
+
+.explore {
+  background-color: rgb(255, 255, 255);
+  min-height: 450px;
+  padding: 0 10%;
+  gap: 30px;
+
+  @include tablet {
+    padding: 50px 10%;
+                    
+  }
+  @include mobile {
+    padding: 50px 5%;
+  }
+
+  h2 {
+    margin: 0;
+
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+  .explore-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+                      
+    }
+
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+      }
+      span {
+        transition: .5s ease;
+        @include mobile {
+          font-size: 13px;
+        }
+      }
+
+      .line {
+        width: 50px;
+        height: 2px;
+        background-color: rgb(196, 196, 196);
+        transition: .5s ease;
+      }
+    }
+    
+    .item:hover .line {
+      width: 80px;
+      background-color: var(--fail);
+    }
+    .item:hover span {
+      // animation: rotation .5s forwards;
+      color: var(--fail);
+    }
+
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

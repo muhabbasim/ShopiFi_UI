@@ -1,0 +1,52 @@
+@import '../../style.scss';
+
+.messages {
+  padding: 0 10%;
+  min-height: 70vh;
+
+  @include mobile {
+    padding: 0 5%;
+  } 
+  .header {
+    justify-content: space-between;
+    margin: 40px 0 20px 0;
+    h2 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    button {
+      border: none;
+      padding: 8px 10px;
+      background-color: rgb(16, 180, 16);
+      color: white;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+  table {
+    thead {
+      tr {
+        @include mobile {
+          .date {
+            display: none;
+          }
+          .action {
+            display: none;
+          }
+        } 
+        th{
+          padding: 20px 0;
+          width: 180px;
+          text-align: start;
+          font-weight: 400;
+        }
+        th:nth-child(2) {
+          width: 600px;
+        }
+      }
+    }
+    tbody:nth-child(2n+2) {
+      // background-color: rgb(235, 250, 245);
+    }
+  }
+}

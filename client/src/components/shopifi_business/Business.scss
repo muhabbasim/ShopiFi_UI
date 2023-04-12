@@ -1,0 +1,112 @@
+@import '../../style.scss';
+
+.business {
+  height: 500px;
+  background-color: rgb(21, 21, 69);
+  padding: 50px 5%;
+
+  @include tablet {
+    height: 130vh;                      
+  }
+
+  .hero {
+    padding: 0 10%;
+    gap: 50px;
+    
+    @include tablet {
+      flex-direction: column;   
+    }
+
+    @include mobile {
+      padding: 0px 5%;
+    }
+
+    .left {
+      gap: 20px;
+      flex: 1;
+      h2 {
+        font-size: 30px;
+        margin: 0;
+        color: white;
+
+        @include tablet {
+           font-size: 35px; 
+        }
+
+        @include mobile {
+           font-size: 30px; 
+        }        
+  
+        span {
+          font-size: 30px;
+          font-weight: 200;
+        }
+      }
+  
+      p {
+        font-size: 20px;
+        margin: 0;
+        color: white;
+        @include tablet {
+          font-size: 25px;
+        }
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+  
+      .item {
+  
+        .title {
+            gap: 20px;
+  
+            .first-row {
+                gap: 10px;
+  
+                h3 {
+                  color: rgb(255, 255, 255);
+                  margin: 0;
+                  font-size: 15px;
+                  font-weight: 200;
+                  
+                  @include tablet {
+                    font-size: 20px;
+                  }
+                  @include mobile {
+                    font-size: 15px;
+                  }
+                }
+            }
+  
+        
+          }
+          
+      }
+  
+      button {
+        width: fit-content;
+        padding: 10px 40px;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(92, 187, 92);
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        
+        background-color: rgb(133, 218, 133);
+       
+      }
+      
+    }
+    
+    .right {
+      flex: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+
+  }
+}

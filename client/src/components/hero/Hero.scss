@@ -1,0 +1,168 @@
+@import '../../style.scss';
+
+.container {
+
+    .hero {
+        padding: 0 10%;
+        background-color: var(--fail);
+        height: 95vh;
+          
+        @include tablet {
+            height: 60vh;
+        }
+
+        @include mobile {
+            height: 60vh;
+            padding: 0 5%;
+        }
+
+        .left {
+            gap: 30px;
+
+            h2{
+                font-size: 39px;
+                margin: 0;
+                color: white;
+                @include mobile {
+                    font-size: 30px;
+
+                }
+                span {
+                    font-size: 39px;
+                    font-weight: 200;
+                }
+            }
+        
+            .search-box {
+                background-color: white;
+                width: 400px;
+                position: relative;
+                padding-left: 10px;
+                display: flex;
+                border-radius: 25px;
+                overflow: hidden;
+        
+                @include mobile {
+                    display: none;
+                }
+                  
+                @include tablet {
+                    width: 100%;
+                }
+
+                .search-icon {
+                    position: absolute;
+                    top: 8px;
+
+                    @include tablet {
+                        top: 13px;
+                    }
+                }
+                
+                input {
+                    flex: 5;
+                    padding: 10px 10px;
+                    border: none;
+                    padding-left: 40px;
+                    outline: none;
+                    caret-color: var(--fail);
+                    font-size: 16px;
+                    color: rgb(72, 72, 72);
+                    @include mobile {
+                
+                    }
+                      
+                    @include tablet {
+                        padding: 15px ;
+                        padding-left: 40px;
+                    }
+
+                }
+
+                button {
+                    flex: 1;
+                    border: none;
+                    padding: 10px 15px;
+                    color: white;
+                    font-size: 16px;
+                    background-color: rgb(255, 174, 174);
+                }
+            }
+            
+            .popular {
+                gap: 15px;
+
+                @include mobile {
+                    display: none;
+                }
+        
+                span {
+                    color: white;
+        
+                }
+        
+                ul {
+                    gap: 10px;
+                    padding-left: 0;
+        
+                    li {
+                        list-style: none;
+                        border: 1px solid white;
+                        padding: 5px 10px;
+                        border-radius: 15px;
+                        color: white;
+                        font-size: 12px;
+
+                        @include tablet {
+                            font-size: 15px;
+                            padding: 6px 10px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .right {
+            @include mobile {
+
+            }
+              
+            @include tablet {
+                display: none;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+        
+    }
+    
+    .credentials {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(230, 230, 230);
+        padding: 20px 0;
+        opacity: .6;
+
+        @include mobile {
+            display: none;
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        .brands {
+
+            img {
+                width: 100px; 
+                object-fit: contain;
+                aspect-ratio: 3/2;
+                mix-blend-mode: color-burn;
+                filter: grayscale(100%);
+            }
+        }
+    }
+
+}

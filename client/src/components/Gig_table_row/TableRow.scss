@@ -1,0 +1,29 @@
+@import '../../style.scss';
+
+
+.gig-table-row {
+
+  @include mobile {
+      .price {
+        display: none;
+      }
+      .buyer {
+        display: none;
+      }
+      .img {
+        display: none;
+      }
+    } 
+  td { 
+    padding: 5px 5px;
+    font-size: 15px;
+
+    
+    img {
+      width: 60px;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+}
+

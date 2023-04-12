@@ -1,0 +1,24 @@
+.dropdown {
+  position: absolute;
+  top: 97px;
+  background-color: white;
+  color: black;
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: gray;
+  }
+  li:hover {
+    color: var(--fail);
+  }
+
+}
+.clicked {
+  display: none;
+}

@@ -1,0 +1,174 @@
+@import '../../style.scss';
+
+.add {
+  min-height: 100vh;
+  padding: 0 10% 50px 10%;
+
+  h2 {
+    font-weight: 200;
+    color: rgb(116, 116, 116);
+  }
+
+  .add-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    } 
+
+    .left {
+      flex: 1;
+      gap: 20px;
+
+      @include mobile {
+        gap: 10px;
+      } 
+
+      .item {
+        gap: 15px;
+
+        select {
+          padding: 10px;
+          outline: none;
+          border:1px solid rgb(214, 214, 214);
+          border-radius: 3px;
+
+        }
+
+        span {
+          color: rgb(116, 116, 116);
+        }
+        input {
+          padding: 10px;
+          outline: none;
+          border:1px solid rgb(214, 214, 214);
+          border-radius: 3px;
+          @include mobile {
+            width: 100%;
+          } 
+        }
+
+        textarea {
+          padding: 10px;
+          outline: none;
+          border:1px solid rgb(214, 214, 214);
+          border-radius: 3px;
+          @include mobile {
+            width: 100%;
+          } 
+        }
+        
+        
+      }
+
+      .add-images {
+        gap: 10px;
+
+        .input-item {
+          gap: 15px;
+          @include mobile {
+            width: 100%;
+            gap: 0px;
+          }
+          span {
+            font-weight: 200;
+            color: rgb(116, 116, 116);
+          }
+          input {
+            padding: 10px;
+            outline: none;
+            border: none;
+  
+          }
+         
+        }
+      }
+
+      button {
+        border: none;
+        padding: 15px;
+        color: white;
+        background-color: rgb(71, 174, 71);
+        border-radius: 3px;
+        cursor: pointer;
+        // @include mobile {
+        //   width: 100%;
+        // } 
+      }
+    }
+  
+    .right {
+      flex: 1;
+      gap: 10px;
+      .item {
+        gap: 10px;
+
+        span {
+          font-weight: 200;
+          color: rgb(116, 116, 116);
+        }
+        input {
+          padding: 10px;
+          outline: none;
+          border:1px solid rgb(214, 214, 214);
+          border-radius: 3px;
+
+          @include mobile {
+            width: 100%;
+          } 
+        }
+
+        textarea {
+          padding: 10px;
+          outline: none;
+          border:1px solid rgb(214, 214, 214);
+          border-radius: 3px;
+
+          @include mobile {
+            width: 100%;
+          } 
+        }
+
+        .add-features {
+          gap: 10px;
+
+          input {
+            flex: 1
+          }
+
+          .add-feature {
+          
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: rgb(71, 174, 71);
+            border-radius: 3px;
+            cursor: pointer;
+          }
+          
+        }
+
+      }
+      
+      .feature-list {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        .feature {
+          gap: 10px;
+          padding: 10px;
+          border: 1px solid var(--light-blue);
+          color: gray;
+          .close {
+            color: var(--fail);
+            cursor: pointer;
+          }
+        }
+
+      }
+    }
+  }
+}
